@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Briefing Profissional - Site Barbearia Masculina</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0f0f, #1b1b1b);
+      color: #fff;
+      line-height: 1.6;
+      padding: 30px 15px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #181818;
+      border: 1px solid #2d2d2d;
+      border-radius: 16px;
+      padding: 35px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.35);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      text-align: center;
+      color: #d0d0d0;
+      margin-bottom: 30px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      color: #d4af37;
+      font-size: 1.25rem;
+      border-left: 4px solid #d4af37;
+      padding-left: 10px;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: bold;
+      color: #f2f2f2;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="email"],
+    input[type="time"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #3a3a3a;
+      border-radius: 8px;
+      background: #242424;
+      color: #fff;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #d4af37;
+      box-shadow: 0 0 8px rgba(212, 175, 55, 0.25);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .opcoes {
+      margin-top: 8px;
+    }
+
+    .opcoes label {
+      font-weight: normal;
+      display: block;
+      margin: 8px 0;
+      color: #dddddd;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 35px;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      background: #d4af37;
+      color: #111;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #be9b2f;
+    }
+
+    .rodape {
+      text-align: center;
+      margin-top: 20px;
+      color: #a9a9a9;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        padding: 22px;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Criação do Site Barbearia Wesley Ramos</h1>
+    <form action="https://formsubmit.co/victorfrossard@hotmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Novo briefing recebido - Site Barbearia Masculina">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://seusite.github.io/obrigado.html">
+
+      <h2>1. Informações gerais da barbearia</h2>
+
+      <label for="nomeBarbearia">Nome da barbearia</label>
+      <input type="text" id="nomeBarbearia" name="Nome da barbearia" required>
+
+      <label for="responsavel">Nome do proprietário ou responsável</label>
+      <input type="text" id="responsavel" name="Responsável" required>
+
+      <div class="grid-2">
+        <div>
+          <label for="fundacao">Ano de fundação</label>
+          <input type="text" id="fundacao" name="Ano de fundação">
+        </div>
+        <div>
+          <label for="cidade">Cidade / Bairro</label>
+          <input type="text" id="cidade" name="Cidade e bairro">
+        </div>
+      </div>
+
+      <label for="endereco">Endereço completo</label>
+      <input type="text" id="endereco" name="Endereço completo">
+
+      <label for="referencia">Ponto de referência</label>
+      <input type="text" id="referencia" name="Ponto de referência">
+
+      <div class="grid-3">
+        <div>
+          <label for="telefone">Telefone principal</label>
+          <input type="tel" id="telefone" name="Telefone principal">
+        </div>
+        <div>
+          <label for="whatsapp">WhatsApp</label>
+          <input type="tel" id="whatsapp" name="WhatsApp">
+        </div>
+        <div>
+          <label for="emailContato">Email de contato</label>
+          <input type="email" id="emailContato" name="Email de contato">
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div>
+          <label for="instagram">Instagram</label>
+          <input type="url" id="instagram" name="Instagram">
+        </div>
+        <div>
+          <label for="facebook">Facebook</label>
+          <input type="url" id="facebook" name="Facebook">
+        </div>
+        <div>
+          <label for="outrasRedes">Outras redes sociais</label>
+          <input type="text" id="outrasRedes" name="Outras redes sociais">
+        </div>
+      </div>
+
+      <h2>2. Sobre a marca e posicionamento</h2>
+
+      <label for="historia">Conte a história da barbearia</label>
+      <textarea id="historia" name="História da barbearia"></textarea>
+
+      <label for="missao">Qual é a missão da barbearia?</label>
+      <textarea id="missao" name="Missão da barbearia"></textarea>
+
+      <label for="valores">Quais valores a marca quer transmitir?</label>
+      <textarea id="valores" name="Valores da marca"></textarea>
+
+      <label for="diferenciais">O que diferencia sua barbearia das concorrentes?</label>
+      <textarea id="diferenciais" name="Diferenciais da barbearia"></textarea>
+
+      <label for="fraseMarca">Como você gostaria que o cliente descrevesse sua barbearia em uma frase?</label>
+      <textarea id="fraseMarca" name="Descrição ideal da marca"></textarea>
+
+      <label for="slogan">A barbearia possui slogan?</label>
+      <input type="text" id="slogan" name="Slogan">
+
+      <div class="opcoes">
+        <label>Qual imagem a marca quer passar?</label>
+        <label><input type="checkbox" name="Imagem da marca[]" value="Clássica"> Clássica</label>
+        <label><input type="checkbox" name="Imagem da marca[]" value="Moderna"> Moderna</label>
+        <label><input type="checkbox" name="Imagem da marca[]" value="Premium"> Premium</label>
+        <label><input type="checkbox" name="Imagem da marca[]" value="Urbana"> Urbana</label>
+        <label><input type="checkbox" name="Imagem da marca[]" value="Luxuosa"> Luxuosa</label>
+        <label><input type="checkbox" name="Imagem da marca[]" value="Familiar"> Familiar</label>
+        <label><input type="checkbox" name="Imagem da marca[]" value="Descolada"> Descolada</label>
+      </div>
+
+      <h2>3. Público-alvo</h2>
+
+      <label for="publicoPrincipal">Qual é o público principal da barbearia?</label>
+      <input type="text" id="publicoPrincipal" name="Público principal">
+
+      <div class="grid-2">
+        <div>
+          <label for="faixaEtaria">Faixa etária média dos clientes</label>
+          <input type="text" id="faixaEtaria" name="Faixa etária média">
+        </div>
+        <div>
+          <label for="perfilDesejado">Qual perfil de cliente você quer atrair mais?</label>
+          <input type="text" id="perfilDesejado" name="Perfil de cliente desejado">
+        </div>
+      </div>
+
+      <div class="opcoes">
+        <label>O público procura mais:</label>
+        <label><input type="checkbox" name="Busca do público[]" value="Praticidade"> Praticidade</label>
+        <label><input type="checkbox" name="Busca do público[]" value="Preço"> Preço</label>
+        <label><input type="checkbox" name="Busca do público[]" value="Experiência"> Experiência</label>
+        <label><input type="checkbox" name="Busca do público[]" value="Estética"> Estética</label>
+        <label><input type="checkbox" name="Busca do público[]" value="Atendimento premium"> Atendimento premium</label>
+      </div>
+
+      <h2>4. Serviços oferecidos</h2>
+
+      <div class="opcoes">
+        <label>Quais serviços a barbearia oferece?</label>
+        <label><input type="checkbox" name="Serviços[]" value="Corte masculino"> Corte masculino</label>
+        <label><input type="checkbox" name="Serviços[]" value="Barba"> Barba</label>
+        <label><input type="checkbox" name="Serviços[]" value="Corte + barba"> Corte + barba</label>
+        <label><input type="checkbox" name="Serviços[]" value="Sobrancelha"> Sobrancelha</label>
+        <label><input type="checkbox" name="Serviços[]" value="Pigmentação"> Pigmentação</label>
+        <label><input type="checkbox" name="Serviços[]" value="Lavagem"> Lavagem</label>
+        <label><input type="checkbox" name="Serviços[]" value="Hidratação"> Hidratação</label>
+        <label><input type="checkbox" name="Serviços[]" value="Selagem"> Selagem</label>
+        <label><input type="checkbox" name="Serviços[]" value="Progressiva masculina"> Progressiva masculina</label>
+        <label><input type="checkbox" name="Serviços[]" value="Corte infantil"> Corte infantil</label>
+        <label><input type="checkbox" name="Serviços[]" value="Dia do noivo"> Dia do noivo</label>
+        <label><input type="checkbox" name="Serviços[]" value="Plano mensal"> Plano mensal</label>
+      </div>
+
+      <label for="maisVendidos">Quais são os serviços mais vendidos?</label>
+      <textarea id="maisVendidos" name="Serviços mais vendidos"></textarea>
+
+      <label for="maisDestaque">Quais serviços devem ganhar mais destaque no site?</label>
+      <textarea id="maisDestaque" name="Serviços com maior destaque"></textarea>
+
+      <label for="mostrarPrecos">Deseja exibir preços no site?</label>
+      <select id="mostrarPrecos" name="Deseja exibir preços no site">
+        <option value="">Selecione</option>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+
+      <label for="precos">Se sim, informe os preços que devem aparecer</label>
+      <textarea id="precos" name="Preços para o site"></textarea>
+
+      <label for="combos">Existem combos, promoções ou pacotes?</label>
+      <textarea id="combos" name="Combos e promoções"></textarea>
+
+      <h2>5. Equipe</h2>
+
+      <label for="quantidadeBarbeiros">Quantos barbeiros trabalham no local?</label>
+      <input type="number" id="quantidadeBarbeiros" name="Quantidade de barbeiros">
+
+      <label for="nomesEquipe">Quais nomes devem aparecer no site?</label>
+      <textarea id="nomesEquipe" name="Nomes da equipe"></textarea>
+
+      <label for="especialidades">Quais especialidades cada profissional possui?</label>
+      <textarea id="especialidades" name="Especialidades da equipe"></textarea>
+
+      <div class="opcoes">
+        <label>Deseja mostrar no site:</label>
+        <label><input type="checkbox" name="Mostrar no site[]" value="Foto da equipe"> Foto da equipe</label>
+        <label><input type="checkbox" name="Mostrar no site[]" value="Mini biografia"> Mini biografia</label>
+        <label><input type="checkbox" name="Mostrar no site[]" value="Especialidades"> Especialidades</label>
+      </div>
+
+      <h2>6. Funcionamento e horários</h2>
+
+      <label for="diasFuncionamento">Quais dias da semana a barbearia funciona?</label>
+      <input type="text" id="diasFuncionamento" name="Dias de funcionamento" placeholder="Ex: segunda a sábado">
+
+      <div class="grid-2">
+        <div>
+          <label for="abre">Horário de abertura</label>
+          <input type="time" id="abre" name="Horário de abertura">
+        </div>
+        <div>
+          <label for="fecha">Horário de fechamento</label>
+          <input type="time" id="fecha" name="Horário de fechamento">
+        </div>
+      </div>
+
+      <div class="opcoes">
+        <label>Informações extras sobre horários:</label>
+        <label><input type="checkbox" name="Informações de horário[]" value="Funciona em feriados"> Funciona em feriados</label>
+        <label><input type="checkbox" name="Informações de horário[]" value="Funciona aos domingos"> Funciona aos domingos</label>
+        <label><input type="checkbox" name="Informações de horário[]" value="Tem horário especial em datas comemorativas"> Tem horário especial em datas comemorativas</label>
+        <label><input type="checkbox" name="Informações de horário[]" value="Tem pausa para almoço"> Tem pausa para almoço</label>
+        <label><input type="checkbox" name="Informações de horário[]" value="Tem horário estendido"> Tem horário estendido</label>
+        <label><input type="checkbox" name="Informações de horário[]" value="Tem atendimento VIP fora do horário"> Tem atendimento VIP fora do horário</label>
+      </div>
+
+      <label for="politicaAtraso">Qual é a política de atraso, cancelamento ou perda de horário?</label>
+      <textarea id="politicaAtraso" name="Política de atraso e cancelamento"></textarea>
+
+      <h2>7. Agendamento</h2>
+
+      <div class="opcoes">
+        <label>Como os clientes agendam hoje?</label>
+        <label><input type="checkbox" name="Agendamento atual[]" value="WhatsApp"> WhatsApp</label>
+        <label><input type="checkbox" name="Agendamento atual[]" value="Telefone"> Telefone</label>
+        <label><input type="checkbox" name="Agendamento atual[]" value="Instagram"> Instagram</label>
+        <label><input type="checkbox" name="Agendamento atual[]" value="Aplicativo"> Aplicativo</label>
+        <label><input type="checkbox" name="Agendamento atual[]" value="Presencial"> Presencial</label>
+      </div>
+
+      <label for="agendamentoSite">Deseja agendamento direto pelo site?</label>
+      <select id="agendamentoSite" name="Deseja agendamento direto pelo site">
+        <option value="">Selecione</option>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+
+      <div class="opcoes">
+        <label>Se sim, o agendamento será por:</label>
+        <label><input type="checkbox" name="Tipo de agendamento no site[]" value="WhatsApp"> WhatsApp</label>
+        <label><input type="checkbox" name="Tipo de agendamento no site[]" value="Link externo"> Link externo</label>
+        <label><input type="checkbox" name="Tipo de agendamento no site[]" value="Formulário"> Formulário</label>
+        <label><input type="checkbox" name="Tipo de agendamento no site[]" value="Sistema integrado"> Sistema integrado</label>
+      </div>
+
+      <div class="opcoes">
+        <label>O cliente poderá escolher no agendamento:</label>
+        <label><input type="checkbox" name="Escolha no agendamento[]" value="Serviço"> Serviço</label>
+        <label><input type="checkbox" name="Escolha no agendamento[]" value="Profissional"> Profissional</label>
+        <label><input type="checkbox" name="Escolha no agendamento[]" value="Data"> Data</label>
+        <label><input type="checkbox" name="Escolha no agendamento[]" value="Horário"> Horário</label>
+      </div>
+
+      <label for="observacoesAgenda">Há alguma observação importante sobre o agendamento?</label>
+      <textarea id="observacoesAgenda" name="Observações sobre agendamento"></textarea>
+
+      <h2>8. Experiência e estrutura do local</h2>
+
+      <div class="opcoes">
+        <label>O ambiente oferece:</label>
+        <label><input type="checkbox" name="Estrutura do local[]" value="Café"> Café</label>
+        <label><input type="checkbox" name="Estrutura do local[]" value="Cerveja"> Cerveja</label>
+        <label><input type="checkbox" name="Estrutura do local[]" value="Água"> Água</label>
+        <label><input type="checkbox" name="Estrutura do local[]" value="Ar-condicionado"> Ar-condicionado</label>
+        <label><input type="checkbox" name="Estrutura do local[]" value="TV"> TV</label>
+        <label><input type="checkbox" name="Estrutura do local[]" value="Videogame"> Videogame</label>
+        <label><input type="checkbox" name="Estrutura do local[]" value="Música ambiente"> Música ambiente</label>
+        <label><input type="checkbox" name="Estrutura do local[]" value="Estacionamento"> Estacionamento</label>
+        <label><input type="checkbox" name="Estrutura do local[]" value="Acessibilidade"> Acessibilidade</label>
+      </div>
+
+      <label for="diferencialAmbiente">Qual diferencial do ambiente deve ser destacado no site?</label>
+      <textarea id="diferencialAmbiente" name="Diferencial do ambiente"></textarea>
+
+      <h2>9. Conteúdo que deve aparecer no site</h2>
+
+      <div class="opcoes">
+        <label>O que deve aparecer no site?</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="História da barbearia"> História da barbearia</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Fotos do espaço"> Fotos do espaço</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Fotos dos cortes"> Fotos dos cortes</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Fotos da equipe"> Fotos da equipe</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Vídeos"> Vídeos</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Preços"> Preços</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Horários"> Horários</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Localização"> Localização</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Mapa"> Mapa</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Botão WhatsApp"> Botão WhatsApp</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Botão agendamento"> Botão agendamento</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Depoimentos"> Depoimentos</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Promoções"> Promoções</label>
+        <label><input type="checkbox" name="Conteúdo do site[]" value="Produtos"> Produtos</label>
+      </div>
+
+      <label for="obrigatorio">O que é obrigatório aparecer no site?</label>
+      <textarea id="obrigatorio" name="Conteúdo obrigatório no site"></textarea>
+
+      <label for="naoMostrar">O que você não quer mostrar no site?</label>
+      <textarea id="naoMostrar" name="Conteúdo que não deseja mostrar"></textarea>
+
+      <h2>10. Identidade visual e estilo do site</h2>
+
+      <label for="temLogo">A barbearia possui logotipo?</label>
+      <select id="temLogo" name="Possui logotipo">
+        <option value="">Selecione</option>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+
+      <label for="cores">Quais cores deseja usar no site?</label>
+      <input type="text" id="cores" name="Cores desejadas no site" placeholder="Ex: preto, dourado e branco">
+
+      <label for="coresEvitar">Quais cores não quer usar?</label>
+      <input type="text" id="coresEvitar" name="Cores a evitar">
+
+      <div class="opcoes">
+        <label>Qual estilo visual deseja para o site?</label>
+        <label><input type="checkbox" name="Estilo visual[]" value="Sofisticado"> Sofisticado</label>
+        <label><input type="checkbox" name="Estilo visual[]" value="Elegante"> Elegante</label>
+        <label><input type="checkbox" name="Estilo visual[]" value="Clássico"> Clássico</label>
+        <label><input type="checkbox" name="Estilo visual[]" value="Moderno"> Moderno</label>
+        <label><input type="checkbox" name="Estilo visual[]" value="Minimalista"> Minimalista</label>
+        <label><input type="checkbox" name="Estilo visual[]" value="Urbano"> Urbano</label>
+        <label><input type="checkbox" name="Estilo visual[]" value="Luxuoso"> Luxuoso</label>
+      </div>
+
+      <label for="referencias">Tem algum site de referência ou concorrente que você gosta?</label>
+      <textarea id="referencias" name="Referências de sites"></textarea>
+
+      <h2>11. Objetivo do site</h2>
+
+      <div class="opcoes">
+        <label>Qual é o principal objetivo do site?</label>
+        <label><input type="checkbox" name="Objetivo do site[]" value="Atrair novos clientes"> Atrair novos clientes</label>
+        <label><input type="checkbox" name="Objetivo do site[]" value="Fortalecer a marca"> Fortalecer a marca</label>
+        <label><input type="checkbox" name="Objetivo do site[]" value="Facilitar agendamento"> Facilitar agendamento</label>
+        <label><input type="checkbox" name="Objetivo do site[]" value="Mostrar profissionalismo"> Mostrar profissionalismo</label>
+        <label><input type="checkbox" name="Objetivo do site[]" value="Vender produtos"> Vender produtos</label>
+      </div>
+
+      <label for="resultadoIdeal">O que seria um resultado excelente para você com esse site?</label>
+      <textarea id="resultadoIdeal" name="Resultado ideal com o site"></textarea>
+
+      <h2>12. Materiais e envio</h2>
+
+      <div class="opcoes">
+        <label>Você possui:</label>
+        <label><input type="checkbox" name="Materiais disponíveis[]" value="Logo"> Logo</label>
+        <label><input type="checkbox" name="Materiais disponíveis[]" value="Fotos profissionais"> Fotos profissionais</label>
+        <label><input type="checkbox" name="Materiais disponíveis[]" value="Fotos do espaço"> Fotos do espaço</label>
+        <label><input type="checkbox" name="Materiais disponíveis[]" value="Fotos dos serviços"> Fotos dos serviços</label>
+        <label><input type="checkbox" name="Materiais disponíveis[]" value="Fotos da equipe"> Fotos da equipe</label>
+        <label><input type="checkbox" name="Materiais disponíveis[]" value="Vídeos"> Vídeos</label>
+        <label><input type="checkbox" name="Materiais disponíveis[]" value="Depoimentos"> Depoimentos</label>
+      </div>
+
+      <label for="observacoesFinais">Existe alguma observação final importante para o desenvolvimento do site?</label>
+      <textarea id="observacoesFinais" name="Observações finais"></textarea>
+
+      <h2>13. Email de quem está respondendo</h2>
+
+      <label for="emailCliente">Seu email</label>
+      <input type="email" id="emailCliente" name="Email de quem respondeu" required>
+
+      <button type="submit">Enviar briefing</button>
+    </form>
+
+    <p class="rodape">
+      Obrigado por responder. Essas informações vão ajudar a construir um site profissional,
+      alinhado com a identidade e os objetivos da sua barbearia.
+    </p>
+  </div>
+</body>
+</html>
